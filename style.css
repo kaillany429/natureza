@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c9e7aed7;
+}
+
+h1 {
+    font-family: fonte;
+    font-weight: 900px;
+    font-size: 5em;
+    text-align: center;
+    background-image: url(https://phoneky.co.uk/thumbs/screensavers/down/abstract/luzverde_rsp8ccwa.gif);
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 40px;
+}
+
+h1::selection {
+    background-color: rgb(30, 210, 69);
+    color: #ffffff;
+}
+
+
+@font-face {
+    font-family: fonte;
+    src: url(./fonte/Super\ Kinds.ttf);
+}
+
+.container {
+    height: 400px;
+    width: 740px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+input {
+    display: none;
+}
+
+.bar {
+    background-color: rgb(178, 235, 178);
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%);
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 800%;
+    border-radius: 30px;
+}
+
+.imagem {
+    width: 12.5%;
+    transition: all 1s cubic-bezier(.09, .71, 1, .26);
+}
+
+
+
+#imagem1:checked~.img1 {
+    margin-left: 0%;
+}
+
+#imagem2:checked~.img1 {
+    margin-left: -12.5%;
+}
+
+#imagem3:checked~.img1 {
+    margin-left: -25%;
+}
+
+#imagem4:checked~.img1 {
+    margin-left: -37.5%;
+}
+
+#imagem5:checked~.img1 {
+    margin-left: -50%;
+}
+
+#imagem6:checked~.img1 {
+    margin-left: -62.5%;
+}
+
+#imagem7:checked~.img1 {
+    margin-left: -75%;
+}
+
+#imagem8:checked~.img1 {
+    margin-left: -87.5%;
+}
+
+
+footer {
+    bottom: 0%;
+    position: fixed;
+    font-size: 15px;
+    background-color: #a2da819f;
+    width: 100%;
+    color: #000000;
+}
+
+footer p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media(max-width:768px) {
+
+    .container {
+        height: 400px;
+        width: 400px;
+    }
+
+}
